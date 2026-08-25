@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chom Chao City Hotel — Phnom Penh, Cambodia</title>
+<meta name="description" content="Chom Chao City Hotel offers 50 air-conditioned rooms, free Wi-Fi, and a 24-hour front desk in Dangkao district, Phnom Penh — about 10 km from Phnom Penh International Airport.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://chomchaocityhotel.com/">
+
+<!-- Open Graph / social sharing -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Chom Chao City Hotel — Phnom Penh, Cambodia">
+<meta property="og:description" content="50 air-conditioned rooms, free Wi-Fi, free parking, and a 24-hour front desk. About 10 km from Phnom Penh International Airport.">
+<meta property="og:url" content="https://chomchaocityhotel.com/">
+<meta property="og:locale" content="en_US">
+
+<!-- Structured data so Google understands this is a hotel -->
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+  "@type": "Hotel",
+  "name": "Chom Chao City Hotel",
+  "description": "50-room 3-star hotel in Dangkao district, Phnom Penh, offering free Wi-Fi, free parking, and a 24-hour front desk.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1231 Kraing Dauntay Village, Sangkat Chom Chao 2",
+    "addressLocality": "Phnom Penh",
+    "addressRegion": "Khan Pou Senchey",
+    "postalCode": "12405",
+    "addressCountry": "KH"
+  },
+  "starRating": {
+    "@type": "Rating",
+    "ratingValue": "3"
+  },
+  "numberOfRooms": "50",
+  "amenityFeature": [
+    {"@type": "LocationFeatureSpecification", "name": "Free Wi-Fi", "value": true},
+    {"@type": "LocationFeatureSpecification", "name": "Free Parking", "value": true},
+    {"@type": "LocationFeatureSpecification", "name": "24-hour Front Desk", "value": true},
+    {"@type": "LocationFeatureSpecification", "name": "Air Conditioning", "value": true}
+  ],
+  "checkinTime": "14:00",
+  "checkoutTime": "12:00"
+  }
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #16332E;
+    --bg-deep: #0F2723;
+    --cream: #F3ECDD;
+    --cream-dim: #C9C0AC;
+    --saffron: #E4A335;
+    --terracotta: #B5551F;
+    --sage: #6B8F7F;
+    --line: rgba(243,236,221,0.14);
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--bg);
+    color:var(--cream);
+    font-family:'Inter',sans-serif;
+    line-height:1.6;
+    overflow-x:hidden;
+  }
+  @media (prefers-reduced-motion: reduce){
+    *{animation-duration:0.01ms !important; transition-duration:0.01ms !important;}
+  }
+  a{color:inherit;text-decoration:none;}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 32px;}
+  h1,h2,h3{font-family:'Fraunces',serif;font-weight:500;line-height:1.08;}
+  .eyebrow{
+    font-family:'Space Mono',monospace;
+    font-size:12px;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--saffron);
+    display:flex;align-items:center;gap:10px;
+  }
+  .eyebrow::before{content:"";width:22px;height:1px;background:var(--saffron);display:inline-block;}
+
+  /* NAV */
+  header{
+    position:fixed;top:0;left:0;right:0;z-index:50;
+    background:rgba(15,39,35,0.82);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  nav{display:flex;align-items:center;justify-content:space-between;padding:18px 32px;max-width:1140px;margin:0 auto;}
+  .logo{font-family:'Fraunces',serif;font-size:19px;font-weight:600;letter-spacing:0.01em;}
+  .logo span{color:var(--saffron);}
+  .navlinks{display:flex;gap:34px;font-size:14px;}
+  .navlinks a{opacity:0.82;transition:opacity 0.2s;position:relative;}
+  .navlinks a:hover, .navlinks a:focus-visible{opacity:1;}
+  .navlinks a:focus-visible{outline:2px solid var(--saffron);outline-offset:4px;}
+  .navcta{
+    font-family:'Space Mono',monospace;font-size:12.5px;letter-spacing:0.04em;
+    border:1px solid var(--saffron);color:var(--saffron);padding:9px 18px;border-radius:2px;
+    transition:background 0.2s, color 0.2s;
+  }
+  .navcta:hover, .navcta:focus-visible{background:var(--saffron);color:var(--bg-deep);}
+  .navcta:focus-visible{outline:2px solid var(--cream);outline-offset:2px;}
+  .navtoggle{display:none;background:none;border:none;color:var(--cream);font-size:26px;cursor:pointer;}
+
+  /* HERO */
+  .hero{
+    min-height:100vh;
+    display:flex;flex-direction:column;justify-content:center;
+    position:relative;
+    padding:140px 0 80px;
+    background:
+      radial-gradient(ellipse 900px 500px at 82% 8%, rgba(228,163,53,0.16), transparent 60%),
+      radial-gradient(ellipse 700px 500px at 10% 100%, rgba(107,143,127,0.18), transparent 60%),
+      var(--bg);
+  }
+  .hero .wrap{position:relative;z-index:2;}
+  .hero-tag{margin-bottom:26px;}
+  .hero h1{
+    font-size:clamp(42px, 7vw, 82px);
+    max-width:920px;
+    color:var(--cream);
+    opacity:0;
+    animation:riseIn 0.9s 0.15s cubic-bezier(.2,.7,.2,1) forwards;
+  }
+  .hero h1 em{font-style:italic;color:var(--saffron);font-weight:400;}
+  .hero p.lede{
+    max-width:520px;margin-top:26px;font-size:17px;color:var(--cream-dim);
+    opacity:0;animation:riseIn 0.9s 0.35s cubic-bezier(.2,.7,.2,1) forwards;
+  }
+  @keyframes riseIn{from{opacity:0;transform:translateY(16px);}to{opacity:1;transform:translateY(0);}}
+  .hero-actions{margin-top:38px;display:flex;gap:16px;flex-wrap:wrap;
+    opacity:0;animation:riseIn 0.9s 0.5s cubic-bezier(.2,.7,.2,1) forwards;}
+  .btn-primary{
+    font-family:'Space Mono',monospace;font-size:13px;letter-spacing:0.03em;
+    background:var(--saffron);color:var(--bg-deep);padding:15px 26px;border-radius:2px;
+    transition:transform 0.2s, background 0.2s; display:inline-block;
+  }
+  .btn-primary:hover, .btn-primary:focus-visible{background:#f0b654;transform:translateY(-2px);}
+  .btn-primary:focus-visible{outline:2px solid var(--cream);outline-offset:3px;}
+  .btn-ghost{
+    font-family:'Space Mono',monospace;font-size:13px;letter-spacing:0.03em;
+    border:1px solid var(--line);color:var(--cream);padding:15px 26px;border-radius:2px;
+    transition:border-color 0.2s;
+  }
+  .btn-ghost:hover, .btn-ghost:focus-visible{border-color:var(--cream);}
+  .btn-ghost:focus-visible{outline:2px solid var(--saffron);outline-offset:2px;}
+
+  .hero-stats{
+    margin-top:80px;display:flex;gap:0;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:28px;
+    opacity:0;animation:riseIn 0.9s 0.65s cubic-bezier(.2,.7,.2,1) forwards;
+  }
+  .stat{padding-right:48px;margin-right:48px;border-right:1px solid var(--line);}
+  .stat:last-child{border-right:none;}
+  .stat .num{font-family:'Fraunces',serif;font-size:30px;color:var(--saffron);}
+  .stat .label{font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.06em;text-transform:uppercase;color:var(--cream-dim);margin-top:4px;}
+
+  section{padding:110px 0;}
+  .section-head{max-width:640px;margin-bottom:64px;}
+  .section-head h2{font-size:clamp(30px,4vw,44px);margin-top:16px;}
+  .section-head p{color:var(--cream-dim);margin-top:16px;font-size:15.5px;max-width:520px;}
+
+  /* ABOUT */
+  .about{background:var(--bg-deep);}
+  .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start;}
+  .about-copy p{color:var(--cream-dim);margin-bottom:18px;font-size:16px;}
+  .about-copy strong{color:var(--cream);font-weight:500;}
+  .facts{border-top:1px solid var(--line);}
+  .fact-row{display:flex;justify-content:space-between;padding:16px 0;border-bottom:1px solid var(--line);font-size:14.5px;}
+  .fact-row .k{font-family:'Space Mono',monospace;font-size:11.5px;letter-spacing:0.05em;text-transform:uppercase;color:var(--sage);}
+  .fact-row .v{color:var(--cream);text-align:right;}
+
+  /* ROOMS */
+  .rooms-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);}
+  .room-card{background:var(--bg);padding:36px 30px;transition:background 0.25s;}
+  .room-card:hover{background:var(--bg-deep);}
+  .room-card .rnum{font-family:'Space Mono',monospace;color:var(--saffron);font-size:12px;letter-spacing:0.05em;}
+  .room-card h3{font-size:23px;margin-top:14px;}
+  .room-card p{color:var(--cream-dim);font-size:14.5px;margin-top:12px;}
+  .room-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px;}
+  .room-tags span{font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.03em;color:var(--sage);border:1px solid rgba(107,143,127,0.4);padding:5px 9px;border-radius:2px;}
+
+  /* AMENITIES */
+  .amenities{background:var(--bg-deep);}
+  .amen-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);}
+  .amen-card{background:var(--bg-deep);padding:30px 24px;}
+  .amen-card .ic{font-family:'Fraunces',serif;font-style:italic;font-size:26px;color:var(--saffron);}
+  .amen-card h4{font-size:15.5px;margin-top:14px;font-weight:600;font-family:'Inter',sans-serif;}
+  .amen-card p{font-size:13px;color:var(--cream-dim);margin-top:8px;}
+
+  /* ROUTE / SIGNATURE — distance rail */
+  .route{position:relative;}
+  .route-rail{position:relative;margin-top:20px;padding-left:36px;}
+  .route-rail::before{
+    content:"";position:absolute;left:6px;top:6px;bottom:6px;width:1px;
+    background:linear-gradient(var(--saffron), var(--sage));
+  }
+  .route-stop{position:relative;padding-bottom:44px;}
+  .route-stop:last-child{padding-bottom:0;}
+  .route-stop::before{
+    content:"";position:absolute;left:-36px;top:4px;width:11px;height:11px;border-radius:50%;
+    background:var(--bg);border:2px solid var(--saffron);
+  }
+  .route-stop.origin::before{background:var(--saffron);}
+  .route-stop-head{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px 20px;}
+  .route-stop-head h4{font-family:'Fraunces',serif;font-size:19px;font-weight:500;}
+  .route-stop-head .dist{font-family:'Space Mono',monospace;color:var(--sage);font-size:13px;}
+  .route-stop p{color:var(--cream-dim);font-size:14px;margin-top:6px;max-width:440px;}
+
+  /* CONTACT */
+  .contact{background:var(--bg-deep);}
+  .contact-grid{display:grid;grid-template-columns:1.1fr 0.9fr;gap:64px;}
+  .contact-list{border-top:1px solid var(--line);}
+  .contact-row{padding:20px 0;border-bottom:1px solid var(--line);}
+  .contact-row .k{font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.05em;text-transform:uppercase;color:var(--sage);}
+  .contact-row .v{margin-top:6px;font-size:16px;}
+  .map-frame{
+    border:1px solid var(--line);border-radius:2px;overflow:hidden;aspect-ratio:4/3;
+    position:relative;display:flex;align-items:center;justify-content:center;text-align:center;padding:32px;
+    background:
+      radial-gradient(circle at 30% 30%, rgba(228,163,53,0.10), transparent 55%),
+      repeating-linear-gradient(0deg, rgba(243,236,221,0.05) 0px, rgba(243,236,221,0.05) 1px, transparent 1px, transparent 42px),
+      repeating-linear-gradient(90deg, rgba(243,236,221,0.05) 0px, rgba(243,236,221,0.05) 1px, transparent 1px, transparent 42px),
+      var(--bg-deep);
+  }
+  .map-frame .pin{
+    width:14px;height:14px;border-radius:50% 50% 50% 0;background:var(--saffron);
+    transform:rotate(-45deg);margin:0 auto 22px;box-shadow:0 0 0 8px rgba(228,163,53,0.14);
+  }
+  .map-frame .map-label{font-family:'Fraunces',serif;font-size:19px;color:var(--cream);}
+  .map-frame .map-sub{font-family:'Space Mono',monospace;font-size:12px;color:var(--cream-dim);margin-top:8px;letter-spacing:0.03em;}
+  .map-frame .map-link{
+    display:inline-block;margin-top:20px;font-family:'Space Mono',monospace;font-size:12.5px;
+    color:var(--saffron);border-bottom:1px solid var(--saffron);padding-bottom:2px;
+  }
+
+  .cta-band{
+    background:linear-gradient(120deg, var(--terracotta), var(--saffron));
+    color:var(--bg-deep);text-align:center;padding:90px 32px;
+  }
+  .cta-band h2{font-size:clamp(28px,4.5vw,46px);color:var(--bg-deep);}
+  .cta-band p{margin-top:14px;font-size:16px;opacity:0.85;}
+  .cta-band .btn-primary{background:var(--bg-deep);color:var(--cream);margin-top:32px;}
+  .cta-band .btn-primary:hover{background:#0a1c19;}
+
+  footer{background:var(--bg-deep);padding:48px 0;border-top:1px solid var(--line);}
+  .foot-grid{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px;}
+  .foot-grid .logo{font-size:16px;}
+  .foot-links{display:flex;gap:26px;font-size:13.5px;color:var(--cream-dim);}
+  .foot-links a:hover{color:var(--cream);}
+  .foot-fine{margin-top:24px;font-size:12px;color:var(--cream-dim);opacity:0.6;font-family:'Space Mono',monospace;}
+
+  @media (max-width: 880px){
+    .navlinks{display:none;}
+    .navtoggle{display:block;}
+    .about-grid,.contact-grid{grid-template-columns:1fr;gap:40px;}
+    .rooms-grid{grid-template-columns:1fr;}
+    .amen-grid{grid-template-columns:1fr 1fr;}
+    .hero-stats{gap:0;}
+    .stat{padding-right:28px;margin-right:28px;}
+  }
+  @media (max-width:520px){
+    .amen-grid{grid-template-columns:1fr;}
+    .wrap{padding:0 20px;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="logo">Chom Chao <span>City</span> Hotel</div>
+    <div class="navlinks">
+      <a href="#about">About</a>
+      <a href="#rooms">Rooms</a>
+      <a href="#amenities">Amenities</a>
+      <a href="#location">Location</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a class="navcta" href="#contact">Check Availability</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Dangkao District, Phnom Penh</div>
+    <h1>A clean, quiet stay<br>on the road <em>into</em> the city.</h1>
+    <p class="lede">50 air-conditioned rooms, a 24-hour front desk, and a straight run to Phnom Penh International Airport — Chom Chao City Hotel is built for travelers who want rest without the runaround.</p>
+    <div class="hero-actions">
+      <a class="btn-primary" href="#contact">Check Availability</a>
+      <a class="btn-ghost" href="#rooms">View Rooms</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><div class="num">50</div><div class="label">Rooms</div></div>
+      <div class="stat"><div class="num">3★</div><div class="label">Rated Property</div></div>
+      <div class="stat"><div class="num">24/7</div><div class="label">Front Desk</div></div>
+      <div class="stat"><div class="num">~10km</div><div class="label">To Airport</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap about-grid">
+    <div>
+      <div class="section-head" style="margin-bottom:28px;">
+        <div class="eyebrow">About the hotel</div>
+        <h2>Practical comfort, Chom Chao style.</h2>
+      </div>
+      <div class="about-copy">
+        <p>Tucked into <strong>Sangkat Chom Chao 2</strong> on the western edge of Phnom Penh, the hotel serves travelers passing through Dangkao district — airport arrivals, road trips out to the provinces, and guests who'd rather skip the noise of the riverside for something calmer.</p>
+        <p>Every one of the 50 rooms is air-conditioned with a flat-screen TV, private bathroom, and free in-room Wi-Fi. Ask at the desk for airport transfer or a rental car, and the laundry service will have your clothes turned around before you check out.</p>
+      </div>
+    </div>
+    <div class="facts">
+      <div class="fact-row"><div class="k">Check-in</div><div class="v">2:00 PM</div></div>
+      <div class="fact-row"><div class="k">Check-out</div><div class="v">12:00 PM</div></div>
+      <div class="fact-row"><div class="k">Rooms</div><div class="v">50, non-smoking throughout</div></div>
+      <div class="fact-row"><div class="k">Parking</div><div class="v">Free, on-site</div></div>
+      <div class="fact-row"><div class="k">Front desk</div><div class="v">24 hours</div></div>
+      <div class="fact-row"><div class="k">District</div><div class="v">Dangkao, Phnom Penh</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="rooms">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Accommodation</div>
+      <h2>Rooms built for a good night, not a long stay.</h2>
+      <p>Simple, functional, and consistently clean — furnished the same way in every room so there are no surprises at check-in.</p>
+    </div>
+    <div class="rooms-grid">
+      <div class="room-card">
+        <div class="rnum">01 — Standard</div>
+        <h3>Standard Twin</h3>
+        <p>Two single beds, air conditioning, and a work desk. Built for the practical overnight stop.</p>
+        <div class="room-tags"><span>A/C</span><span>Free Wi-Fi</span><span>Flat-screen TV</span></div>
+      </div>
+      <div class="room-card">
+        <div class="rnum">02 — Deluxe</div>
+        <h3>Deluxe Twin</h3>
+        <p>A larger footprint with an in-room safe and iron/ironing board, for guests staying a few nights.</p>
+        <div class="room-tags"><span>In-room safe</span><span>Balcony</span><span>Desk</span></div>
+      </div>
+      <div class="room-card">
+        <div class="rnum">03 — Balcony</div>
+        <h3>Balcony Room</h3>
+        <p>A private balcony looking out over Chom Chao — the room to book if you want fresh air with your morning coffee.</p>
+        <div class="room-tags"><span>Balcony</span><span>City view</span><span>A/C</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="amenities" id="amenities">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">On site</div>
+      <h2>Everything you need, nothing you don't.</h2>
+    </div>
+    <div class="amen-grid">
+      <div class="amen-card"><div class="ic">24</div><h4>Front Desk</h4><p>Staffed around the clock for late arrivals and early departures.</p></div>
+      <div class="amen-card"><div class="ic">✈</div><h4>Airport Transfer</h4><p>Arrange a pickup or car rental directly at reception.</p></div>
+      <div class="amen-card"><div class="ic">⌘</div><h4>Free Wi-Fi</h4><p>Reaches every room and the lobby, at no extra charge.</p></div>
+      <div class="amen-card"><div class="ic">◫</div><h4>Free Parking</h4><p>On-site parking included for guests arriving by car.</p></div>
+      <div class="amen-card"><div class="ic">≋</div><h4>Laundry Service</h4><p>Dry cleaning and laundry, with self-serve facilities available.</p></div>
+      <div class="amen-card"><div class="ic">◎</div><h4>Luggage Storage</h4><p>Drop your bags before check-in or after check-out.</p></div>
+      <div class="amen-card"><div class="ic">✦</div><h4>Daily Housekeeping</h4><p>Rooms refreshed every day of your stay.</p></div>
+      <div class="amen-card"><div class="ic">⊟</div><h4>Front-Desk Safe</h4><p>Secure storage for valuables, available on request.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="route" id="location">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Getting around</div>
+      <h2>Positioned on the western approach to the city.</h2>
+      <p>Chom Chao sits between the airport and the capital's center — close enough to both without the price tag of either.</p>
+    </div>
+    <div class="route-rail">
+      <div class="route-stop origin">
+        <div class="route-stop-head"><h4>Chom Chao City Hotel</h4><div class="dist">start</div></div>
+        <p>1231 Kraing Dauntay Village, Sangkat Chom Chao 2, Khan Pou Senchey, Phnom Penh.</p>
+      </div>
+      <div class="route-stop">
+        <div class="route-stop-head"><h4>Phnom Penh International Airport</h4><div class="dist">≈10 km</div></div>
+        <p>A short, direct run — arrange transfer at the front desk ahead of an early flight.</p>
+      </div>
+      <div class="route-stop">
+        <div class="route-stop-head"><h4>Kambol Kart Raceway</h4><div class="dist">≈5 km</div></div>
+        <p>A 10–15 minute drive for guests looking for an afternoon off-site.</p>
+      </div>
+      <div class="route-stop">
+        <div class="route-stop-head"><h4>City Center / Riverside</h4><div class="dist">≈15 km</div></div>
+        <p>Wat Phnom, the Royal Palace, and the riverside promenade — best reached by rented car or ride-hail.</p>
+      </div>
+      <div class="route-stop">
+        <div class="route-stop-head"><h4>Tuol Sleng &amp; Killing Fields</h4><div class="dist">≈15 km</div></div>
+        <p>Both historic sites sit roughly the same distance out, on the way into the city.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap contact-grid">
+    <div>
+      <div class="section-head" style="margin-bottom:28px;">
+        <div class="eyebrow">Find us</div>
+        <h2>Plan your stay.</h2>
+      </div>
+      <div class="contact-list">
+        <div class="contact-row"><div class="k">Address</div><div class="v">1231 Kraing Dauntay Village, Sangkat Chom Chao 2, Khan Pou Senchey, Phnom Penh 12405, Cambodia</div></div>
+        <div class="contact-row"><div class="k">District</div><div class="v">Dangkao, Phnom Penh</div></div>
+        <div class="contact-row"><div class="k">Nearest airport</div><div class="v">Phnom Penh International (PNH) — approx. 10 km</div></div>
+        <div class="contact-row"><div class="k">Directions</div><div class="v"><a href="https://maps.app.goo.gl/a7xmW1LPTfP7c2Qb9" target="_blank" rel="noopener" style="color:var(--saffron);border-bottom:1px solid var(--saffron);">Open in Google Maps →</a></div></div>
+      </div>
+    </div>
+    <div class="map-frame">
+      <div>
+        <div class="pin"></div>
+        <div class="map-label">Sangkat Chom Chao 2</div>
+        <div class="map-sub">Khan Pou Senchey · Phnom Penh</div>
+        <a class="map-link" href="https://maps.app.goo.gl/a7xmW1LPTfP7c2Qb9" target="_blank" rel="noopener">Open full map →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="cta-band">
+  <h2>Book your room in Chom Chao.</h2>
+  <p>Front desk staffed 24 hours — reach out any time to check availability.</p>
+  <a class="btn-primary" href="#contact">Check Availability</a>
+</div>
+
+<footer>
+  <div class="wrap foot-grid">
+    <div class="logo">Chom Chao <span style="color:var(--saffron);">City</span> Hotel</div>
+    <div class="foot-links">
+      <a href="#about">About</a>
+      <a href="#rooms">Rooms</a>
+      <a href="#location">Location</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+  <div class="wrap foot-fine">Phnom Penh, Cambodia</div>
+</footer>
+
+</body>
+</html>
